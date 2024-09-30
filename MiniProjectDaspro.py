@@ -26,7 +26,7 @@ while True:
         print("Selamat datang,", nama1)
         break
     else:
-        print("Maaf, Pin atau NIM Anda mungkin salah, silahkan coba kembali")
+        print("Maaf, Pin atau Nama Anda mungkin salah, silahkan coba kembali")
 print("-------------------------------------------------------------------------------------")
 #Menghitung total pembayaran
 while True:
@@ -44,17 +44,16 @@ while True:
             print("Total Harga barang(Tidak ada Diskon): Rp", total_harga)
     except ValueError: #Jika input tidak sesuai instruksi
         print("Input tidak valid. Harap masukkan angka.")
-        continue
-        #Menanyakan user apakah ingin menghitung ulang total harga atau keluar langsung
+    #Menanyakan pada user apakah ingin menghitung ulang total harga atau langsung keluar 
     while True: 
         konfirmasi = input("\nApakah anda ingin menghitung total harga lagi?\n1. Tidak \n2. Ya\nMasukkan angka:")
-        if konfirmasi == '1' :
+        if konfirmasi == "1" :
             print("Program Selesai")
             # Statement penutup
             print("Terima kasih sudah berbelanja di Toko Silver Light")
             print("Kami tunggu kunjungan Anda selanjutnya.")
             exit() #keluar dari semua looping
-        elif konfirmasi == '2':
+        elif konfirmasi == "2":
             print("Baik silahkan hitung ulang")
             break
         else:
