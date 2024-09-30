@@ -3,7 +3,7 @@ Nama : Nadila Purti
 Nim : 2409116052
 
 # Flowchart
-![052NadilaPutri_MinproDaspro1](https://github.com/user-attachments/assets/6e283dac-2ea0-4f6e-becc-50a714706534)
+![052NadilaPutri_MinproDP1](https://github.com/user-attachments/assets/eb7302bb-2107-4789-a6b6-36407b3d6ea2)
 
 
 
