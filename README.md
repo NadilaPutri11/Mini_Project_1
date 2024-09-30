@@ -3,7 +3,8 @@ Nama : Nadila Purti
 Nim : 2409116052
 
 # Flowchart
-![052NadilaPutri_MinproDaspro1](https://github.com/user-attachments/assets/c90108d2-cb31-43e2-a4ba-7056070f93e2)
+![052NadilaPutri_MinproDaspro1](https://github.com/user-attachments/assets/6e283dac-2ea0-4f6e-becc-50a714706534)
+
 
 
 # Contoh Output dari awal hingga akhir
