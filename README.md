@@ -37,7 +37,7 @@ Judul program
     Jika akun berhasil dibuat Program akan menampilkan "Akun berhasil dibuat"
        
 
-3. Login ke Akun yang telah dibuat
+2. Login ke Akun yang telah dibuat
    print("Silahkan login ke Akun Anda")
    while True:
     nama2= str(input("Silahkan masukkan Nama  :")) 
@@ -50,15 +50,17 @@ Judul program
     print("-------------------------------------------------------------------------------------")
 
     Penjelasan : DI kode yang kedua saya menambahkan kode untuk login dan juga memakai while True. Disini saya hanya menggunakan 2 imputan yaitu nama2 dan pin2 yang kemudian akan dicocokkan dengan variable yang telah diisi saat menginput data untuk registrasi menggunkan kondisi if else, jika nama1 sama dengan nama2 AND  pin1 sama dengan pin2 maka akan memenuhi kondisi dari while True tersebut, kode akan menampilkan "Selamat datang, nama1"(nama1 sesuai dengan inputan) dan akan dihentikan oleh break, jika inputan tidak sesuai dengan kondisi if, maka kode akan terulang hingga kondisi yang benar terpenuhi.
+   
    Output :
    User melakukan login dengan menginputkan nama dan pin sesuai dengan inputan registrasi sebelumnya.
    Output:
    ![Cuplikan layar 2024-10-01 104027](https://github.com/user-attachments/assets/c76672d8-b783-405c-a31b-19f318edc605)
    Jika user melakukan kesalahan input(tidak sesuai atau tidak sama seperti saat registrasi) maka user akan diarahkan untuk login ulang untuk menginput nama dan pin.
+   
    Jika inputan sudah sesuai user akan langsung diarahkan pada program untuk menghitung total pembayaran.
    
     
-4. Menghitung total pembayaran
+3. Menghitung total pembayaran
 while True:
     try:
         hrg_barang = float(input("Silahkan masukkan Harga Barang   : Rp "))
@@ -75,14 +77,17 @@ while True:
     except ValueError: #Jika input tidak sesuai instruksi
         print("Input tidak valid. Harap masukkan angka.")
 
-    Penjelasan : Untuk menghitung total pembayaran saya menggunkan While true lagi, ada juga fungsi try yang berguna agar kode tetap bisa berjalan tanpa krek walaupun ada beberapa masalah seperti kesalahan input dan sebagainya. lalu ada input harga barang dan jumlah barang, untuk harga barang sendiri saya menggunakan tipe data float karena bisa jadi ada desimal, lalu ada input jumlah barang dengan tipe data integer. Selanjutnya saya menambahkan variable baru yaitu total harga, dengan rumus perhitungan seperti di kode, yaitu mengalikan antara harga barang dan jumlah barang yang di beli. Setelah itu ada kondisi if else, dimana jika total_harga lebih dari Rp 250.000 maka pembeli akan mendapatkan diskon sebesar 25%, saya juga menambah 2 variable baru untuk menampilkan diskon dan total pembayaran secara bersih yang harus dibayarkan oleh pembeli setelah mendapatkan diskon, jika harga tidak sampai Rp 250.000 mka pembeli tidak akan mendapatkan diskon dan membayar sesuai penjumlahan harga aslinya. Lalu ada except ValueError jika inputan tidak sesuai instruksi maka akan menampilkan "Input tidak valid. Harap masukkan angka.". Output:
+    Penjelasan : Untuk menghitung total pembayaran saya menggunkan While true lagi, ada juga fungsi try yang berguna agar kode tetap bisa berjalan tanpa krek walaupun ada beberapa masalah seperti kesalahan input dan sebagainya. lalu ada input harga barang dan jumlah barang, untuk harga barang sendiri saya menggunakan tipe data float karena bisa jadi ada desimal, lalu ada input jumlah barang dengan tipe data integer. Selanjutnya saya menambahkan variable baru yaitu total harga, dengan rumus perhitungan seperti di kode, yaitu mengalikan antara harga barang dan jumlah barang yang di beli. Setelah itu ada kondisi if else, dimana jika total_harga lebih dari Rp 250.000 maka pembeli akan mendapatkan diskon sebesar 25%, saya juga menambah 2 variable baru untuk menampilkan diskon dan total pembayaran secara bersih yang harus dibayarkan oleh pembeli setelah mendapatkan diskon, jika harga tidak sampai Rp 250.000 mka pembeli tidak akan mendapatkan diskon dan membayar sesuai penjumlahan harga aslinya. Lalu ada except ValueError jika inputan tidak sesuai instruksi maka akan menampilkan "Input tidak valid. Harap masukkan angka.".
+
+   Output:
    User menginput harga baran dan jumlah barang yang dibeli
    ![Cuplikan layar 2024-10-01 104854](https://github.com/user-attachments/assets/43bbbd5b-bb3d-44af-b0a7-817843db17f9)
-   Jika total harga kurang dari 250000 program akan langsung menampilkan total harga tanpa diskon 
-   Jika total harga lebih dari 250000, pertama program akan menampilkan total harga secara keseluruhan, lalu program akan menghitung total diskon yang didapatkan dan menampilkannya, terakhir program akann menghitung lagi harga yang harus dibayar oleh pembeli setelah mendapatkan diskon dan menampilkannya
+   Jika total harga kurang dari 250000 program akan langsung menampilkan total harga tanpa diskon.
+   
+   Jika total harga lebih dari 250000, pertama program akan menampilkan total harga secara keseluruhan, lalu program akan menghitung total diskon yang didapatkan dan menampilkannya, terakhir program akann menghitung lagi harga yang harus dibayar oleh pembeli setelah mendapatkan diskon dan menampilkannya.
    
    
-6. Menanyakan pada user apakah ingin menghitung ulang total harga atau langsung keluar
+4. Menanyakan pada user apakah ingin menghitung ulang total harga atau langsung keluar
     while True: 
         konfirmasi = input("\nApakah anda ingin menghitung total harga lagi?\n1. Tidak \n2. Ya\nMasukkan angka:")
         if konfirmasi == "1" :
@@ -97,10 +102,13 @@ while True:
         else:
             print("Pilihan tidak tersedia, silahkan pilih angka sesuai opsi")
 
-   Penjelasan : Terakhir ada kode untuk  menghitung ulang total harga atau langsung keluar dari loopingnya, pertama saya menulis inputan dengan variable konfirmasi untuk menanyakan "Apakah anda ingin menghitung total harga lagi?\n1. Tidak \n2. Ya\nMasukkan angka:" jika user memilih "1" maka while akan berhenti dan menampilkan staement penutup yang telah saya tulis, lalu jika user menginput "2" maka user akan kembali pada kode pengimputan harga dan jumlah barang sampai user memilih kondisi "1" untuk keluar dari program. dan jika user mengimput diluar dari "1" OR "2" maka program akan menampilkan "Pilihan tidak tersedia, silahkan pilih angka sesuai opsi". Output:
-   ![Cuplikan layar 2024-10-01 105740](https://github.com/user-attachments/assets/a3dbfa68-77d6-4f1e-8c5d-98088980fd43)
+   Penjelasan : Terakhir ada kode untuk  menghitung ulang total harga atau langsung keluar dari loopingnya, pertama saya menulis inputan dengan variable konfirmasi untuk menanyakan "Apakah anda ingin menghitung total harga lagi?\n1. Tidak \n2. Ya\nMasukkan angka:" jika user memilih "1" maka while akan berhenti dan menampilkan staement penutup yang telah saya tulis, lalu jika user menginput "2" maka user akan kembali pada kode pengimputan harga dan jumlah barang sampai user memilih kondisi "1" untuk keluar dari program. dan jika user mengimput diluar dari "1" OR "2" maka program akan menampilkan "Pilihan tidak tersedia, silahkan pilih angka sesuai opsi".
+
+   Output:
    Setelah user menginput barang dan program menyelesaikan perhitungan, progtram akan menanyakan apakah ingin melanjutkan atau mengulang
-   jika user memilih "2" untuk mengulang program maka program akan kembali ke program Menghitung total pembayaran, sampai user memilih untuk nomor "1"
+   ![Cuplikan layar 2024-10-01 105740](https://github.com/user-attachments/assets/a3dbfa68-77d6-4f1e-8c5d-98088980fd43)
+   jika user memilih "2" untuk mengulang program maka program akan kembali ke program Menghitung total pembayaran, sampai user memilih untuk nomor "1".
+   
    Jika user memilih "1" maka program akan dihentikan dan menampilkan statement berupa kalimat terima kasih dan untuk berkujung kembali
 
    
